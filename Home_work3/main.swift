@@ -109,13 +109,22 @@ let itsBoll6:Bool? = true
 
 //HomeWork 3_8
 
+let constantTernary = a6 == nil ? 0 : a6!
+let constantBTernary = b6 == nil ? -1 : b6!
+let constantHiText = hiText6 == nil ? "take hi text" : hiText6!
+let constantBoolValue = itsBoll6 == nil ? false : itsBoll6!
 
-let c1 = a6 != nil ?? a6
+print(constantTernary)
+print(constantBTernary)
+print(constantHiText)
+print(constantBoolValue)
 
+let a_ = a6 ?? 0
+let b6_ = b6 ?? -1
+let hiText_ = hiText6 ?? "null-nil"
+let itIsBool_ = itsBoll6 ?? false
 
-
-
-//հայտարարել Optional հաստատւներ a = 12,  b = -34.55, hiText = “Hello”, itIsBool = true,
-//տերնարնի և ?? օպերատոռների միջոցով վերցնել արժեքները և վերագրել a_ b_ hiText_ itIsBool_  հաստատւներին իսկ եթե Optional-ի արժեքը nil է ապա համապտասղանաբառ վերագրել 0, -1, “nil”, false
-
-
+print(a_)
+print(b6_)
+print(hiText_)
+print(itIsBool_)
